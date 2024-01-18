@@ -1,0 +1,13 @@
+---
+- name: Run osbuild_server role
+  hosts: all
+  become: true
+  tasks:
+    - name: Run the role
+      ansible.builtin.import_tasks: ..roles/setup_server/tasks/setup_rh_satellite_repos.yml
+      vars:
+        setup_server_rhsatellite: true
+        setup_server_rhsatellite_host: "w6017iarhsatcaps01.stratus.int.bell.ca"
+        setup_server_rhsatellite_organization: "IaaS_Org"
+        setup_server_rhsatellite_environment: "production"
+        setup_server_rhsatellite_contentview: "POC_rh_golden_image"
