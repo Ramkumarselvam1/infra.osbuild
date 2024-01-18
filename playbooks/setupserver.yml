@@ -11,3 +11,14 @@
         setup_server_rhsatellite_organization: "IaaS_Org"
         setup_server_rhsatellite_environment: "production"
         setup_server_rhsatellite_contentview: "POC_rh_golden_image"
+
+  handlers:
+    - name: restarter
+      ansible.builtin.service:
+       name: "{{ item }}"
+       state: restarted
+       enabled: yes
+      loop:
+       - osbuild-worker@.service.d
+       - osbuild-worker@1.service
+       - osbuild-composer.service

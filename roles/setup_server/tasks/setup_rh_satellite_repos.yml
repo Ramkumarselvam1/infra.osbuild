@@ -51,13 +51,3 @@
 #     group: root
 #     mode: '0644'
 
-handlers:
-- name: restarter
-  ansible.builtin.service:
-    name: "{{ item }}"
-    state: restarted
-    enabled: yes
-    loop:
-       - osbuild-worker@.service.d
-       - osbuild-worker@1.service
-       - osbuild-composer.service
