@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: Run the role
-      ansible.builtin.import_tasks: roles/setup_server/tasks/setup_rh_satellite_repos.yml
+      ansible.builtin.import_tasks: ../roles/setup_server/tasks/setup_rh_satellite_repos.yml
       vars:
         setup_server_rhsatellite: true
         setup_server_rhsatellite_host: "w6017iarhsatcaps01.stratus.int.bell.ca"
