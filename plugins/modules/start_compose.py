@@ -73,6 +73,7 @@ options:
             - iot-installer
             - iot-raw-image
             - container
+            - gce
     ostree_ref:
         description:
             - ostree ref
@@ -151,6 +152,7 @@ argument_spec = dict(
             "iot-installer",
             "iot-raw-image",
             "container",
+            "gce",
         ],
     ),
     ostree_ref=dict(type="str", required=False, default=""),
@@ -304,6 +306,7 @@ def start_compose(module, weldr):
             "vhd": ["vhd"],
             "raw.xz": ["edge-raw-image", "iot-raw-image"],
             "ami": ["ami"],
+            "gce": ["gce"]
         }
 
         output_type: str = ""
