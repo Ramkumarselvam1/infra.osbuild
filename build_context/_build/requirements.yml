@@ -1,5 +1,6 @@
 ---
 collections:
   - ansible.posix
-  - git+https://github.com/redhat-cop/infra.osbuild.git
+  - git+https://github.com/Ramkumarselvam1/infra.osbuild
+  #- git+https://github.com/redhat-cop/infra.osbuild.git
   - fedora.linux_system_roles
