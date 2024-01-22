@@ -152,7 +152,7 @@ argument_spec = dict(
             "iot-installer",
             "iot-raw-image",
             "container",
-            "gce",
+            "gce"
         ],
     ),
     ostree_ref=dict(type="str", required=False, default=""),
