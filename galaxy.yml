@@ -71,7 +71,9 @@ repository: https://github.com/Ramkumarselvam1/infra.osbuild
 documentation: https://github.com/redhat-cop/infra.osbuild/blob/main/README.md
 
 # The URL to the homepage of the collection/project
-homepage: https://github.com/redhat-cop/infra.osbuild
+homepage: https://github.com/Ramkumarselvam1/infra.osbuild
+# https://github.com/redhat-cop/infra.osbuild
 
 # The URL to the collection issue tracker
-issues: https://github.com/redhat-cop/infra.osbuild/issues
+issues: https://github.com/Ramkumarselvam1/infra.osbuild/issues
+#https://github.com/redhat-cop/infra.osbuild/issues
