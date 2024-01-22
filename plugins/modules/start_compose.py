@@ -299,13 +299,14 @@ def start_compose(module, weldr):
         changed: bool = True
 
         compose_output_types: dict[str, list[str]] = {
-            "tar": ["tar", "edge-commit", "iot-commit", "edge-container", "iot-container", "container", "gce"],
+            "tar": ["tar", "edge-commit", "iot-commit", "edge-container", "iot-container", "container"],
             "iso": ["edge-installer", "edge-simplified-installer", "iot-installer", "image-installer"],
             "qcow2": ["qcow2", "openstack", "oci"],
             "vmdk": ["vmdk"],
             "vhd": ["vhd"],
             "raw.xz": ["edge-raw-image", "iot-raw-image"],
             "ami": ["ami"],
+            "tar.gz": ["gce"]
          #   "gce": ["gce"]
         }
 
