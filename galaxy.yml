@@ -64,7 +64,8 @@ dependencies:
   "fedora.linux_system_roles": ">1.0.0"
 
 # The URL of the originating SCM repository
-repository: https://github.com/redhat-cop/infra.osbuild
+repository: https://github.com/Ramkumarselvam1/infra.osbuild
+# https://github.com/redhat-cop/infra.osbuild
 
 # The URL to any online docs
 documentation: https://github.com/redhat-cop/infra.osbuild/blob/main/README.md
