@@ -87,6 +87,7 @@
         - name: Include enable_custom_repos.yml
           ansible.builtin.include_tasks:
             file: enable_custom_repos.yml
+            
         - name: debug the customizations
           debug:
              var: builder_compose_customizations
